@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live calculator</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/cef649e5b9.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
 </head>
 
 <body>
-
-    <div id="display">
-        <p>0</p>
+    <div id="calculator" class="container">
+        <div id="display">
+            <p></p>
+        </div>
+        <div id="inputs">
+            <div id="first-row" class="row">
+                <button id="clear" class="operator-button">AC</button>
+                <button id="return" class="return-button">CE</button>
+                <button id="divide" class="operator-button right-col">%</button>
+            </div>
+            <div id="second-row" class="row">
+                <button id="7" class="number-button">7</button>
+                <button id="8" class="number-button">8</button>
+                <button id="9" class="number-button">9</button>
+                <button id="multiply" class="operator-button right-col">x</button>
+            </div>
+            <div id="third-row" class="row">
+                <button id="4" class="number-button">4</button>
+                <button id="5" class="number-button">5</button>
+                <button id="6" class="number-button">6</button>
+                <button id="subtract" class="operator-button right-col">-</button>
+            </div>
+            <div id="fourth-row" class="row">
+                <button id="1" class="number-button">1</button>
+                <button id="2" class="number-button">2</button>
+                <button id="3" class="number-button">3</button>
+                <button id="add" class="operator-button right-col">+</button>
+            </div>
+            <div id="fifth-row" class="row">
+                <button id="0" class="number-button zero-button">0</button>
+                <button id="." class="number-button">.</button>
+                <button id="total" class="total-button right-col">=</button>
+            </div>
+        </div>
     </div>
-    <div id="inputs">
-        <button id="9" class="number-button">9</button>
-        <button id="8" class="number-button">8</button>
-        <button id="7" class="number-button">7</button>
-        <button id="6" class="number-button">6</button>
-        <button id="5" class="number-button">5</button><br>
-        <button id="4" class="number-button">4</button>
-        <button id="3" class="number-button">3</button>
-        <button id="2" class="number-button">2</button>
-        <button id="1" class="number-button">1</button>
-        <button id="0" class="number-button">0</button><br>
-        <button id="." class="number-button">.</button>
-        <button id="add" class="operator-button">+</button>
-        <button id="subtract" class="operator-button">-</button>
-        <button id="multiply" class="operator-button">*</button>
-        <button id="divide" class="operator-button">/</button>
-        <button id="total" class="total-button">=</button><br>
-        <button id="return" class="return-button">Delete</button>
-        <button id="clear" class="operator-button">Clear</button>
-
+    <div class="footer">
+        <p id="footer-text">© disconico</p>
+        <a href="https://github.com/disconico" target="_blank">
+            <i class="fa fa-lg fa-github" aria-hidden="true"></i>
+        </a>
     </div>
-
 </body>
+
 </html>
