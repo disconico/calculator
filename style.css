@@ -60,8 +60,9 @@ body {
     height: 75px;
     width: 215px;
     margin: 5px 5px 5px 5px;
-    font-size: xx-large;
+    font-size: x-large;
     text-align: end;
+    letter-spacing: 0.08rem;
 }
 
 #inputs {

@@ -19,10 +19,12 @@ let b = 0;
 let ope;
 
 nbrBtn.forEach(button => button.addEventListener('click', (e) => {
-    let input = e.target.id;
-    display.innerText = `${storage.join('')}${input}`;
-    storage.push(input);
-    console.log(storage);
+    if (storage.length <= 10) {
+        let input = e.target.id;
+        display.innerText = `${storage.join('')}${input}`;
+        storage.push(input);
+        console.log(storage);
+    }
 }))
 
 opeBtn.forEach(button => button.addEventListener('click', (e) => {
@@ -91,10 +93,12 @@ window.addEventListener('keydown', keyboardInput);
 
 function keyboardInput(e) {
     if (e.key >= 0 && e.key <= 9 || e.key === '.') {
-        let input = e.key;
-        display.innerText = `${storage.join('')}${input}`;
-        storage.push(input);
-        console.log(storage);
+        if (storage.length <= 10) {
+            let input = e.key;
+            display.innerText = `${storage.join('')}${input}`;
+            storage.push(input);
+            console.log(storage);
+        }
     } else if (e.key === 'Escape') {
         storage = [];
         a = 0;
